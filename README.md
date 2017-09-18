@@ -5,7 +5,7 @@ Segue abaixo breve explicação sobre o porquê de todas as operações serem re
 
 ## Push
 
-Em uma pilha todos os elementos são adicionados sempre em uma extremidade, e removido da outra. Por conta disso não há necessidade de ficar percorrendo vários elementos para adicionar ou remover um elemento na pilha. Para fazer isso, implementei uma lista simplesmente encadeada utilizando uma classe Node que armezana o valor e a referência para o elemento imediatamente abaixo na pilha. Com isso, ao adicionar um valor no topo da pilha, basta que esse novo elemento tenha o valor do topo antigo como próximo e a pilha agora tenha como novo topo, o elemento associado. O(1)
+Em uma pilha todos os elementos são adicionados sempre em uma extremidade, e removido da mesma. Por conta disso não há necessidade de ficar percorrendo vários elementos para adicionar ou remover um elemento na pilha. Para fazer isso, implementei uma lista simplesmente encadeada utilizando uma classe Node que armezana o valor e a referência para o elemento imediatamente abaixo na pilha. Com isso, ao adicionar um valor no topo da pilha, basta que esse novo elemento tenha o valor do topo antigo como próximo e a pilha agora tenha como novo topo, o elemento associado. O(1)
 
 ## Pop
 
