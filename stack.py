@@ -71,3 +71,27 @@ class Stack:
 	# na MinStack já que o primeiro elemento sempre é inserido lá também
 	def is_empty(self):
 		return self.min_stack.is_empty()
+
+def main():
+	stack = Stack()
+	op = -1
+	while op != 4:
+		print('1 - Adicionar elemento')
+		print('2 - Remover elemento')
+		print('3 - Retornar menor elemento')
+		print('4 - Sair')
+		print('Selecione uma opcao')
+		op = int(input(""))
+
+		if op == 0:
+			break
+		elif op == 1:
+			value = int(input("Forneca o numero para ser adicionado na pilha "))
+			stack.push(value)
+		elif op == 2:
+			stack.pop()
+		elif op == 3:
+			print('Menor elemento da pilha = ',stack.min())
+
+if __name__ == '__main__':
+	main()
